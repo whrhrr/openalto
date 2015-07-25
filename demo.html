@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Open ALTO</title>
+	<meta name="author" content="Xiao Lin, Haoran Wang" />
+    
+    <link rel="stylesheet" type="text/css" href="custom.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+                
+    <script src="jquery-2.1.1.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="animatescroll.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#back-top").hide();
+        $(function () {
+          $(window).scroll(function () {
+            if ($(window).scrollTop() > $(window).height()/2) {
+              $("#back-top").fadeIn(1500);
+            }
+            else {
+              $("#back-top").fadeOut(1000);
+            }
+          });
+          $("#back-top").click(function () {
+            $('body,html').animate({ scrollTop: 0 }, 800);
+            return false;
+          });
+        });
+        //$("div[id^='section-']").height($(window).height());
+     });
+    </script>
+  </head>
+	
+  <body id="toptop" style="width:100%">
+
+    <div id ="top-navbar" class="topping">
+      <div class="col-md-1">
+	  </div>
+	  <div class="col-md-1 nav-header-icon">
+	    <img src="ALTOlogo.1.png"  alt="ALTOlogo" width="200" height="100">  
+	  </div>
+	  <div class="col-md-1">
+	  </div>
+	  <div class="col-md-2" style="text-align:center;">
+	    <a class="nav-header" href="#" onclick="$('#section-1').animatescroll();">Interop</a> 
+	  </div>
+	  <div class="col-md-2" style="text-align:center;">
+	    <a class="nav-header" href="#" onclick="$('#section-2').animatescroll();">Software</a> 
+	  </div>
+	  <div class="col-md-2" style="text-align:center;">
+	    <a class="nav-header" href="#" onclick="$('#section-3').animatescroll();">Open Service</a>
+	  </div>
+	  <div class="col-md-2" style="text-align:center;">
+	    <a class="nav-header" href="#" onclick="$('#section-4').animatescroll();">Resources</a>
+	  </div>			
+	</div>
+
+    <div id="hello" style="width:100%;">
+        <img src="INTEROP.jpg" style="width:100%;marigin-top:53px;" onclick="$('#section-1').animatescroll();">
+        </div>
+                <div class="main clearfix">
+                        <div id="section-1">
+							<div class="col-md-12 content-wrapper" style="margin-top:20px;">
+							  <div style="margin-bottom:30px;">
+							     <img src="1-interop.png"  alt="interop" width=30% >
+                              </div>							  
+							  <div class="col-md-1 content-wrapper" style="margin-top:20px;">
+							    
+							  </div>
+							  <div class="col-md-11 content-wrapper">
+							    <h2>Outline</h2>
+								<p></p>
+								<p></p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Below is a brief guide of ALTO test process. You will find following information in the guide:</p> 
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.How to login to the start platform and what should be prepared by local and remote participants before the Interop day?</p>
+							    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.The details of the test on interop-day.</p>	
+							    <h3>&nbsp;&nbsp;&nbsp;&nbsp;Preparation: Before Interop-day</h3>
+								<p></p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.The interop volunteers have registered a IRC channel (#alto-interop@freenode). Please make sure you have an IRC client</p> 
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and be able to connect to the IRC channel before the interop-day.</p>
+							    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.Each server participant should deploy its ALTO server with a public IP.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.Please download the test template from <a href="https://docs.google.com/document/d/1irUuS40aydX5hxQIexz1PTIcnYOJRBj_OYB2lXa3vd8/edit?usp=sharing.">here</a></p>							
+							    <h3>&nbsp;&nbsp;&nbsp;&nbsp;Steps: On Interop-day</h3>
+								<p></p>
+								<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 1. Start</h4>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.Please login to the IRC channel (#alto-interop@freenode), and each participant please announce yourself.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.Hearing all announcements, test chair will allocate a test ID (server A, .. client B) for every participant.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.Each server participant posts to the IRC its entry IRD.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.The test chair will continue to announce the matching of clients and servers.</p>
+								<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 2. Test</h4>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.Upon the announcement of a client-server matching, a google doc for the matching is created and announced on the IRC.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.The corresponding client participant will start to run its client to test the corresponding server.</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.Test results will be recorded in the google doc. For a template of the good doc, please click <a href="https://docs.google.com/document/d/1irUuS40aydX5hxQIexz1PTIcnYOJRBj_OYB2lXa3vd8/edit?usp=sharing.">here</a>.</p>
+							    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.After finishing testing, please post to the IRC to let the test chair know.</p>
+								<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 3. Summary of Results</h4>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.After all the tests finished, client participants should send test reports to the volunteers. Volunteers will summarize the results.</p>
+							    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.The WG chair may report the summary results in the WG meeting next day.</p>
+							 </div>
+							</div>
+					    </div>
+			    </div>	
+				
+				<div class="main clearfix">
+            <div id="section-2">
+							<div class="col-md-12 content-wrapper" style="margin-top:40px;">
+							  <div style="margin-bottom:30px;">
+							     <img src="2-software.png"  alt="Software" width=30% >
+                              </div>							  
+							  <div class="col-md-1 content-wrapper" style="margin-top:20px;">
+							  </div>
+							  <div class="col-md-11 content-wrapper">
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp; We have implemented the basic version of ALTO in <a href="http://www.opendaylight.org/project/technical-overview">OpenDaylight</a>. It already had these features:</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp; You could find ALTO Installation/User/Developer Guide from<a href="https://wiki.opendaylight.org/view/ALTO:Main"> OpenDaylight ALTO:Main</a>.</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp; You could download our source code from <a href="https://github.com/opendaylight/alto">Github:opendaylight/alto</a>.</p>
+							  </div>
+						    </div>
+			</div>
+			 </div>	
+                           
+
+                       
+<!--
+                        <div id="section-3">
+                            <div class="content-wrapper w60 disp_inl_blk"> 
+                                <h1>Open Service</h1>
+                                <p>This plugin supports more than 30 different styles of scrolling. The easing option lets you choose a particular style of scrolling according to your choice.</p>
+                      <!--          <p>Some of them are shown here:</p>
+                                <pre><code class="language-javascript">$('#section-2').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});</code></pre>
+                                <pre><code class="language-javascript">$('#section-2').animatescroll({scrollSpeed:2000,easing:'easeOutBounce'});</code></pre>
+                                <pre><code class="language-javascript">$('#section-2').animatescroll({scrollSpeed:3000,easing:'easeOutElastic'});</code></pre>
+                                <pre><code class="language-javascript">$('#section-2').animatescroll({padding:-100});</code></pre>
+                       -->
+                         <!--   </div>
+                            <!--<div class="content-wrapper w30 fr">
+                                <div class="easing-buttons">
+                                    <strong>Click the buttons below for a demo:</strong><br/><br/>
+                                    <button class="btn" onclick="$('#section-2').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">easeInOutBack</button><br/><br/>
+                                    <button class="btn" onclick="$('#section-2').animatescroll({scrollSpeed:2000,easing:'easeOutBounce'});">easeOutBounce</button><br/><br/>
+                                    <button class="btn" onclick="$('#section-2').animatescroll({scrollSpeed:3000,easing:'easeOutElastic'});">easeOutElastic</button><br/><br/>
+                                    <button class="btn" onclick="$('#section-2').animatescroll({padding:-100});">with padding</button>
+                                </div>
+                            </div>    -->                        
+                     <!--   </div>
+
+                        <div id="section-4">
+                            <div class="content-wrapper w60 disp_inl_blk">                                
+                                <h1>Resources</h1>
+                                <ul>
+                                  <p>We list some ALTO related document resources here.</p>
+                                  <li><a href="https://datatracker.ietf.org/doc/search/?name=alto&sort=&rfcs=on&activedrafts=on&author=&group=&area=&ad=&state=&substate=&stream=">ALTO related RFCs</a></li>
+                                  <li><a href="https://wiki.opendaylight.org/view/ALTO:Main">OpenDaylight ALTO:Main</a></li>
+                                  <li><a href="https://github.com/opendaylight/alto">Source Code in Github</a></li>
+                                  <li><a>Resource004</a></li>
+                                </ul>
+
+
+
+                      <!--          <pre class="language-markup">
+                                    <code class="language-markup" >
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;&lt;/script&gt;
+        &lt;script src=&quot;animatescroll.js&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id="section-1"&gt;This is the element where you want to scroll to&lt;div&gt;
+
+        /*
+         * You may call the function like this
+         * (but better attach an event listener)
+         */
+        &lt;a onclick=&quot;$('[jquery selector]').animatescroll([options]);&quot;&gt;Go to Element&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="content-wrapper w30 fr">
+                                <div class="download-buttons">
+                                    <button class="btn" onclick="window.location='http://plugins.compzets.com/animatescroll'">Download</button><br/><br/>
+                                    <button class="btn" onclick="window.location='https://github.com/ramswaroop/animatescroll.js'">Download from github</button>
+                                </div>
+                            </div>-->
+               <!--         </div>
+                    
+                </div>-->
+
+            <div class="main clearfix">
+            <div id="section-3">
+							<div class="col-md-12 content-wrapper" style="margin-top:40px;">
+							  <div style="margin-bottom:30px;">
+							     <img src="3-openservice.png"  alt="OpenService" width=30% >
+                              </div>							  
+							  <div class="col-md-1 content-wrapper" style="margin-top:20px;">
+							  </div>
+							  <div class="col-md-11 content-wrapper">
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp; ODL Server IRD entry: <a>http://alto.yale.edu:8080/controller/nb/v2/alto/directory</a></p>
+							  </div>
+						    </div>
+			</div>
+			</div> 
+
+            <div class="main clearfix">
+            <div id="section-4">
+							<div class="col-md-12 content-wrapper" style="margin-top:40px;">
+							  <div style="margin-bottom:30px;">
+							     <img src="4-resources.png"  alt="Resources" width=30% >
+                              </div>							  
+							  <div class="col-md-1 content-wrapper" style="margin-top:20px;">
+							  </div>
+							  <div class="col-md-11 content-wrapper"> 
+							    <p>&nbsp;&nbsp;&nbsp;&nbsp; Application-Layer Traffic Optimization (ALTO) Protocol: <a href="http://tools.ietf.org/html/rfc7285">RFC 7285</a>.</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp; ALTO related RFCs:<a href="https://datatracker.ietf.org/doc/search/?name=alto&sort=&rfcs=on&activedrafts=on"> Click here!</a></p>
+							    <p></p>
+								 <p></p>
+								  <p></p>
+								   <p></p>
+								    <p></p>
+									 <p></p>
+
+							 </div>
+						    </div>
+			</div>
+			 </div> 
+
+    	<p id="back-top">
+    	  <span>
+		    <a href="#top" onclick="$('body').animatescroll()">
+		    </a>
+		  </span>
+	    </p>
+	</body>
+</html>
+							
+							
+							
+		<div class="bottom">
+		
+         <p>Contact us: info@www.openalto.org </p>
+
+		 
+		</div>                                          
+        </div>
+                    
+                
