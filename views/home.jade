@@ -1,0 +1,31 @@
+extend layout
+
+block top-navbar
+    div#top-navbar.topping
+      div.col-md-1
+      div.col-md-1.nav-header-icon
+        img(src="images/ALTOlogo.1.png", alt="ALTOlogo", width="200", height="100")
+      div.col-md-1
+      div.col-md-2(style="text-align:center;")
+        a.nav-header(href="#" onclick="$('#section-1').animatescroll();").
+          Interop
+      div.col-md-2(style="text-align:center;")
+        a.nav-header(href="#" onclick="$('#section-2').animatescroll();").
+          Software
+      div.col-md-2(style="text-align:center;")
+        a.nav-header(href="#" onclick="$('#section-3').animatescroll();") Open Service
+      div.col-md-2(style="text-align:center;")
+        a.nav-header(href="#" onclick="$('#section-4').animatescroll();") Resources
+
+block content
+  div#hello(style="width:100%;")
+      img(src="images/INTEROP.jpg", style="width:100%;marigin-top:53px;", onclick="$('#section-1').animatescroll();")
+      div
+        div.main.clearfix
+          include sections/interop
+          include sections/software
+          include sections/openservices
+          include sections/resources
+      p#back-top
+        span
+          a(href="#top", onclick="$('body').animatescroll()")

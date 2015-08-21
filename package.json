@@ -1,0 +1,36 @@
+{
+  "name": "openalto",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "compression": "^1.5.2",
+    "connect-assets": "^5.0.1",
+    "connect-mongo": "^0.8.2",
+    "cookie-parser": "^1.3.5",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.11.3",
+    "express-validator": "^2.14.2",
+    "express-vhost": "^0.2.0",
+    "jade": "^1.11.0",
+    "less": "^2.5.1",
+    "mongoose": "^4.1.2",
+    "morgan": "^1.6.1",
+    "request": "^2.60.0",
+    "serve-favicon": "^2.3.0",
+    "consolidate": "^0.13.1",
+    "hogan.js": "^3.0.2"
+  },
+  "devDependencies": {
+    "blessed": "^0.1.80",
+    "multiline": "^1.0.2",
+    "mocha": "^2.2.5",
+    "supertest": "^1.0.1"
+  },
+  "license": "MIT"
+}
