@@ -19,40 +19,37 @@ var engines = require('consolidate');
  **/
 var homeController = require('./controllers/home');
 
+/**
+ * openalto.org
+ **/
 var app = express();
-
-//Express configuration
-app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.engine('html', engines.hogan);
+app.set('view engine', 'html');
 app.use(compress());
-app.use(assets({
-      paths: ['public/css', 'public/js']
-}));
-
 app.use(logger('dev'));
 app.use(favicon(path.join(__dirname, 'public/images/favicon.png')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());
 app.use(cookieParser());
-
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
-
-/**
- * Primary App Routes
- **/
+app.use(errorHandler());
 app.get('/', homeController.index);
 
 /**
- * Error Handler.
- */
-app.use(errorHandler());
-
-/**
- * Start Express server.
- */
-app.listen(app.get('port'), function() {
-      console.log('Express server listening on port %d in %s mode', app.get('port'), app.get('env'));
+ * blog.openalto.org
+ **/
+var appBlog = express();
+appBlog.get('/', function(req, res) {
+    res.send("Welcome to our blog!");
 });
 
-module.exports = app;
+var main = express();
+var evh = require('express-vhost');
+var port = process.env.PORT || 9000;
+main.use(evh.vhost(main.enabled('trust proxy')));
+main.listen(port);
+evh.register('openalto.org', app);
+evh.register('blog.openalto.org', appBlog);
+
+module.exports = main;
