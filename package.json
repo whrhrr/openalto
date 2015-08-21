@@ -16,6 +16,7 @@
     "express-flash": "^0.0.2",
     "express-session": "^1.11.3",
     "express-validator": "^2.14.2",
+    "express-vhost": "^0.2.0",
     "jade": "^1.11.0",
     "less": "^2.5.1",
     "mongoose": "^4.1.2",
