@@ -24,8 +24,7 @@ var homeController = require('./controllers/home');
  **/
 var app = express();
 app.set('views', path.join(__dirname, 'views'));
-app.engine('html', engines.hogan);
-app.set('view engine', 'html');
+app.set('view engine', 'jade');
 app.use(compress());
 app.use(logger('dev'));
 app.use(favicon(path.join(__dirname, 'public/images/favicon.png')));
