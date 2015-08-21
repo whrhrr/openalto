@@ -24,8 +24,7 @@ var app = express();
 //Express configuration
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('html', engines.hogan);
-app.set('view engine', 'html');
+app.set('view engine', 'jade');
 app.use(compress());
 app.use(assets({
       paths: ['public/css', 'public/js']
