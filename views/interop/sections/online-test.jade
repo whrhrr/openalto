@@ -1,0 +1,12 @@
+div#section-2
+    div.col-md-12.content-wrapper(style="margin-top:40px;")
+      div(style="margin-bottom:30px;")
+        h2.pheader.
+          Online Test
+      div.col-md-1.content-wrapper(style="margin-top:20px;")
+      div.col-md-11.content-wrapper
+        form#interop-form(action='/test', method='post')
+          &nbsp;&nbsp;&nbsp;&nbsp; IRD URL:
+          input#ird-url(type="text", name="ird-input")
+          input(type="submit", value="Run")
+div.main.clearfix

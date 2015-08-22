@@ -7,8 +7,14 @@ router.use(function(req, res, next) {
   next();
 });
 
-router.get('/', function(req, res){
-  res.send("Welcome to our interop!");
+router.get('/', function(req, res, next){
+  res.render('interop/index', {
+    title: "Interop"
+  });
+});
+
+router.post('/test', function(req, res, next){
+  res.send("Congratulations! All tests are passed");
 });
 
 module.exports = router

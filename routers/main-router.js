@@ -9,7 +9,7 @@ router.use(function(req, res, next) {
 
 router.get('/', function(req, res){
   var data = index.home_data(req, res);
-  res.render('home', data);
+  res.render('main/index', data);
 });
 
 module.exports = router
