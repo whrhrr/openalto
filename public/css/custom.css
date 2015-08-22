@@ -184,3 +184,11 @@ Back to top button
     line-height: 150px;
 }
 
+.pheader {
+    width:30%;
+    border:2px solid #777777;
+    font-size: 1.5em;
+    text-align:center;
+    color:#777777;
+    padding: 4px 0px 4px 0px;
+}
