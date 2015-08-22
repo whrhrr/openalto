@@ -1,8 +1,7 @@
 var server = require('./server');
 var app = server.create();
 
-app.get('/', function(req, res) {
-    res.send("Welcome to our blog!");
-});
+var router = require('../routers/blog-router');
+app.get('/', router);
 
 module.exports = app;
