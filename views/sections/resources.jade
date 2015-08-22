@@ -4,28 +4,8 @@ div#section-4
       img(src="images/4-resources.png", alt="Resources", style="width:30%")
     div.col-md-1.content-wrapper(style="margin-top:20px;")
     div.col-md-11.content-wrapper
-      p.
-        &nbsp;&nbsp;&nbsp;&nbsp; OpenDaylight ALTO Wiki: <a href="https://wiki.opendaylight.org/view/ALTO:Main">Click here!</a>
-      p.
-        &nbsp;&nbsp;&nbsp;&nbsp; OpenDaylight ALTO in Github: <a href="https://github.com/opendaylight/alto">Click here!</a>
-      p.
-        &nbsp;&nbsp;&nbsp;&nbsp; OpenDaylight ALTO User Guide: <a href="https://github.com/opendaylight/docs/blob/master/manuals/user-guide/src/main/asciidoc/alto/alto-user-guide.adoc">Click here!</a>
-      p.
-        &nbsp;&nbsp;&nbsp;&nbsp; OpenDaylight ALTO Developer Guide: <a href="https://github.com/opendaylight/docs/blob/master/manuals/developer-guide/src/main/asciidoc/alto/alto-developer-guide.adoc">Click here!</a>
-      p.
-        &nbsp;&nbsp;&nbsp;&nbsp; OpenDaylight ALTO Environment Set Up: <a href="https://docs.google.com/document/d/1nx2U5WvVlCU-dierN-EF9L5iAzRrNNr1S73EzsSjAmo/edit?pli=1#heading=h.suviqg19x2u9">Click here!</a>
-      p.
-        &nbsp;&nbsp;&nbsp;&nbsp; OpenDaylight ALTO Design Overview: <a href="https://docs.google.com/presentation/d/1gsShHkvKO-5f8FsEKg9fgIND00R585B5iF2XEBq-Tv8/edit?pli=1#slide=id.p">Click here!</a>
-      p.
-        &nbsp;&nbsp;&nbsp;&nbsp; OpenDaylight ALTO Guide Vedio: <a href="https://drive.google.com/file/d/0ByPo459pgPx6ZWVaZWVSWUY2bWc/view?pli=1">Click here!</a>
-      p.
-        &nbsp;&nbsp;&nbsp;&nbsp; Application-Layer Traffic Optimization (ALTO) Protocol RFC: <a href="http://tools.ietf.org/html/rfc7285">Click here!</a>
-      p.
-        &nbsp;&nbsp;&nbsp;&nbsp; ALTO Related Drafts:<a href="https://datatracker.ietf.org/doc/search/?name=alto&sort=&rfcs=on&activedrafts=on"> Click here!</a>
-      p
-      p
-      p
-      p
-      p
-      p
-
+      - var resource = JSON.parse(resourceStr)
+      - each link, label in resource
+        p.
+          &nbsp;&nbsp;&nbsp;&nbsp; #{label}: #[a(href="#{link}") Click Here!]
+div.main.clearfix

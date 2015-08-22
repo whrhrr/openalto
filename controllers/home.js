@@ -1,9 +1,11 @@
+var index = require('./data/index.js')
+
 /**
  * GET /
  * Home page.
  */
 exports.index = function(req, res) {
-  res.render('home', {
-    title: 'Home'
-  });
+  var data = index.home_data(req, res);
+  console.log(data)
+  res.render('home', data);
 };
