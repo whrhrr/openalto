@@ -6,6 +6,5 @@ var index = require('./data/index.js')
  */
 exports.index = function(req, res) {
   var data = index.home_data(req, res);
-  console.log(data)
   res.render('home', data);
 };
