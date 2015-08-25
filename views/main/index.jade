@@ -1,33 +1,35 @@
 extend ../layout
 
 block custom-assets
+  link(rel="stylesheet", type="text/css", href="css/header.css")
+  link(rel="stylesheet", type="text/css", href="css/section.css")
 
 block top-navbar
-    div#top-navbar.topping
-      div.col-md-1
-      div.col-md-1.nav-header-icon
-        img(src="images/ALTOlogo.1.png", alt="ALTOlogo", width="200", height="100")
-      div.col-md-1
-      div.col-md-2(style="text-align:center;")
-        a.nav-header(href="#" onclick="$('#section-1').animatescroll();").
-          Interop
-      div.col-md-2(style="text-align:center;")
-        a.nav-header(href="#" onclick="$('#section-2').animatescroll();").
-          Software
-      div.col-md-2(style="text-align:center;")
-        a.nav-header(href="#" onclick="$('#section-3').animatescroll();") Open Service
-      div.col-md-2(style="text-align:center;")
-        a.nav-header(href="#" onclick="$('#section-4').animatescroll();") Resources
+  div#image-div
+    img#logo-image(src="/images/logo.png")
+    h2#title IETF
+    div.subtitle-wrap
+      span November 1 - 6
+    div.subtitle-wrap
+      span Yokohama
+    div.subtitle-wrap
+      span#subtitle Join ALTO Team Now
+  div#top-navbar.topping
+    div.col-xs-3
+      a.nav-header(href="#" onclick="$('#section-1').animatescroll();") Interop
+    div.col-xs-3
+      a.nav-header(href="#" onclick="$('#section-2').animatescroll();") Open Service
+    div.col-xs-3
+      a.nav-header(href="#" onclick="$('#section-3').animatescroll();") Resources
+    div.col-xs-3
+      a.nav-header(href="#" onclick="$('#section-4').animatescroll();") About
 
 block content
-  div#hello(style="width:100%;")
-      img(src="http://s8.postimg.org/49hxvhm38/INTEROP.jpg", style="width:100%;marigin-top:53px;", onclick="$('#section-1').animatescroll();")
-      div
-        div.main.clearfix
-          include sections/interop
-          include sections/software
-          include sections/openservices
-          include sections/resources
-      p#back-top
-        span
-          a(href="#top", onclick="$('body').animatescroll()")
+  div
+    include sections/interop
+    include sections/openservices
+    include sections/resources
+    include sections/about
+  p#back-top
+    span
+      a(href="#top", onclick="$('body').animatescroll()")

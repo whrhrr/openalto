@@ -1,0 +1,70 @@
+#image-div {
+  position: relative;
+  background-image: url("/images/header.png");
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+#logo-image {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  width: 80px;
+  height: 70px;
+}
+
+#title {
+  display: inline-block;
+  margin-top: 150px;
+  margin-bottom: 0px;
+  font-size: 4em;
+  color: #fff;
+}
+
+.subtitle-wrap {
+  height: 30px;
+  line-height: 30px;
+}
+
+.subtitle-wrap span {
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+#subtitle {
+  display: inline-block;
+  background-color: #FF3030;
+  display: inline-block;
+  margin-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #fff;
+}
+
+div.col-xs-3 {
+  text-align:center;
+  width: 25%;
+}
+
+.nav-header {
+  font-family: Impact;
+  font-size: 2em;
+  color: #000000;
+  height: 70px;
+}
+
+#top-navbar.topping {
+  margin-top: -35px;
+}
+

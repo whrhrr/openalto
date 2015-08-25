@@ -1,12 +1,8 @@
-div#section-4
-  div.col-md-12.content-wrapper(style="margin-top:40px;")
-    div(style="margin-bottom:30px;")
-      h2.pheader.
-        Resources
-    div.col-md-1.content-wrapper(style="margin-top:20px;")
-    div.col-md-11.content-wrapper
-      - var resource = JSON.parse(resourceStr)
-      - each link, label in resource
-        p.
-          &nbsp;&nbsp;&nbsp;&nbsp; #{label}: #[a(href="#{link}") Click Here!]
-div.main.clearfix
+div#section-3.section.section-odd
+  div.section-title-wrap
+    h2.section-title Resources
+  div#resource-content
+    - var resource = JSON.parse(resourceStr)
+    - each link, label in resource
+      p.resource.
+        #{label}: #[a(href="#{link}") Click Here!]
