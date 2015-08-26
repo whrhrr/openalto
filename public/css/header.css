@@ -1,18 +1,39 @@
-#image-div {
+#top-nav-bar {
+  width: 100%;
+  height: 80px;
+}
+
+.nav-bar-item {
+  display: inline-block;
+  text-align: justify;
+}
+
+.nav-bar-item li {
+  display: inline-block;
+  margin-top: 30px;
+  width: 25%;
+}
+
+.nav-bar-item li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+#logo-image {
+  margin-top: 8px;
+  width: auto;
+  height: 70px;
+}
+
+#image-header {
   position: relative;
+  display: inline-block;
   background-image: url("/images/header.png");
   background-size: cover;
   width: 100%;
   height: 500px;
   text-align: center;
-}
-
-#logo-image {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 40px;
-  height: 35px;
 }
 
 #title {
@@ -40,7 +61,7 @@
 }
 
 #subnote {
-  background-color: #FF3030;
+  background-color: #bf131d;
   font-size: 18px;
   display: inline-block;
   height: 35px;

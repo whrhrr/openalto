@@ -5,8 +5,23 @@ block custom-assets
   link(rel="stylesheet", type="text/css", href="css/section.css")
 
 block top-navbar
-  div#image-div
-    img#logo-image(src="/images/logo.png")
+    div#top-nav-bar
+      div.col-xs-2
+      div.col-xs-8
+        img#logo-image.col-xs-4(src="/images/alto_logo.png")
+        ul.nav-bar-item.col-xs-8
+          li
+            a(href="#") Open Services
+          li
+            a(href="#") Resources
+          li
+            a(href="#") Blog
+          li
+            a(href="#") About
+      div.col-xs-2
+
+block header
+  div#image-header
     h2#title IETF
     div.subtitle-wrap
       span November 1 - 6 <br/> Yokohama
@@ -15,6 +30,7 @@ block top-navbar
 
 block content
   div
+    include sections/introduction
     include sections/openservices
     include sections/resources
     include sections/blog

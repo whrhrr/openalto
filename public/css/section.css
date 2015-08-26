@@ -1,8 +1,17 @@
-.section-odd {
+#section-1 {
+  background-image: url("/images/intro_background.jpg");
+  background-size: contain;
+}
+
+#section-3 {
   background-color: #EEE;
 }
 
-.section-even {
+#section-2 {
+  background-color: #DDD;
+}
+
+#section-4 {
   background-color: #DDD;
 }
 
@@ -29,21 +38,21 @@ h2.section-title {
 }
 
 .alto-service {
-  background-image: url("/images/network.jpg");
+  background-image: url("/images/odl_logo.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 
 .interop-service {
-  background-image: url("/images/interop.jpeg");
+  background-image: url("/images/interop_logo.png");
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 
 .other-service {
-  background-image: url("/images/service.jpeg");
+  background-image: url("/images/onos_logo.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -67,7 +76,7 @@ h2.section-title {
 .service-title {
   margin-top: 120px;
   font-family: "Verdana";
-  font-weight: 600;
+  font-weight: 400;
   color: #FFF;
 }
 
@@ -81,10 +90,10 @@ p.resource {
 }
 
 .footer-image {
-  background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("/images/team.png");
+  background-image: url("/images/alto_team.jpg");
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 250px;
   text-align: center;
 }
 
@@ -93,7 +102,7 @@ p.resource {
   color: #fff;
   font-size: 3em;
   font-weight: 200;
-  margin-top: 140px;
+  margin-top: 100px;
 }
 
 .bottom{
@@ -103,14 +112,4 @@ p.resource {
   color:#DDDDDD;
   text-align:center;
   line-height: 50px;
-}
-
-.cover-link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  border: 0 !important;
-  z-index: 4000;
 }
