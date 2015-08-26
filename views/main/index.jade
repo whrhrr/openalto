@@ -6,19 +6,15 @@ block custom-assets
 
 block top-navbar
     div#top-nav-bar
-      div.col-xs-2
-      div.col-xs-8
-        img#logo-image.col-xs-4(src="/images/alto_logo.png")
-        ul.nav-bar-item.col-xs-8
-          li
-            a(href="#") Open Services
-          li
-            a(href="#") Resources
-          li
-            a(href="#") Blog
-          li
-            a(href="#") About
-      div.col-xs-2
+      div.nav-logo.col-xs-1
+      div.nav-logo.col-xs-2
+        img#logo-image(src="/images/alto_logo.png")
+      div.nav-item.col-xs-8
+        a(href="#", onclick="$('#section-2').animatescroll({padding:80});") Services
+        a(href="#", onclick="$('#section-3').animatescroll({padding:80});") Resources
+        a(href="#", onclick="$('#section-4').animatescroll({padding:80});") Blog
+        a(href="#", onclick="$('#section-5').animatescroll({padding:80});") About Us
+      div.nav-logo.col-xs-1
 
 block header
   div#image-header
@@ -31,7 +27,7 @@ block header
 block content
   div
     include sections/introduction
-    include sections/openservices
+    include sections/services
     include sections/resources
     include sections/blog
     include sections/about
