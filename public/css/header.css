@@ -3,24 +3,25 @@
   background-image: url("/images/header.png");
   background-size: cover;
   width: 100%;
-  height: 400px;
+  height: 500px;
   text-align: center;
 }
 
 #logo-image {
   position: absolute;
-  top: 40px;
-  left: 60px;
-  width: 80px;
-  height: 70px;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 35px;
 }
 
 #title {
+  font-family: "Arial Narrow", Arial, sans-serif;
   display: inline-block;
-  margin-top: 150px;
+  margin-top: 180px;
   margin-bottom: 0px;
-  font-size: 4em;
-  color: #fff;
+  font-size: 4.5em;
+  color: #FFF;
 }
 
 .subtitle-wrap {
@@ -29,42 +30,28 @@
 }
 
 .subtitle-wrap span {
-  color: #fff;
+  display: inline-block;
+  color: #FFF;
   height: 30px;
   line-height: 30px;
   margin-top: 0px;
   margin-bottom: 5px;
   font-size: 2em;
-  font-weight: lighter;
 }
 
-#subtitle {
-  display: inline-block;
+#subnote {
   background-color: #FF3030;
+  font-size: 18px;
   display: inline-block;
-  margin-top: 40px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 80px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  font-size: 1.2em;
-  font-weight: lighter;
-  color: #fff;
+  color: #FFF;
 }
 
 div.col-xs-3 {
-  text-align:center;
-  width: 25%;
+  text-align: center;
+  padding-top: 10px;
 }
-
-.nav-header {
-  font-family: Impact;
-  font-size: 2em;
-  color: #000000;
-  height: 70px;
-}
-
-#top-navbar.topping {
-  margin-top: -35px;
-}
-

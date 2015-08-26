@@ -1,7 +1,3 @@
-body {
-  background-color: #DDD;
-}
-
 .section-odd {
   background-color: #EEE;
 }
@@ -14,47 +10,65 @@ body {
   position: relative;
   width: 100%;
   height: 600px;
-  padding-top: 40px;
+  padding-top: 0px;
 }
 
 .section-title-wrap {
-  margin: auto;
+  padding-top: 50px;
   text-align:center;
 }
 
 .section-title {
   display:inline-block;
-  border-bottom: 1px solid #777777;
 }
 
 h2.section-title {
-  font-weight: lighter;
   font-size: 3.0em;
-  color:#777777;
+  color:#000;
   padding-bottom: 2px;
 }
 
-.interop-button {
-  width: 150px;
-  height: 35px;
-  border: 2px solid #777777;
-  border-radius: 7px;
-  text-align:center;
-  position: absolute;
-  bottom: 130px;
+.alto-service {
+  background-image: url("/images/network.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
-div#button-left {
-  right: 55%;
+.interop-service {
+  background-image: url("/images/interop.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
-div#button-right {
-  left: 55%;
+.other-service {
+  background-image: url("/images/service.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.section-button {
-  font-size: 1.5em;
-  color:#999999;
+.service-block {
+  display: inline-block;
+  margin-top: 80px;
+  padding: 10px;
+  height: 300px;
+}
+
+.service-cover {
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.service-title {
+  margin-top: 120px;
+  font-family: "Verdana";
+  font-weight: 600;
+  color: #FFF;
 }
 
 #resource-content {
@@ -66,15 +80,6 @@ p.resource {
   font-size: 1.2em;
 }
 
-.bottom{
-  width:100%;
-  height:150px;
-  background-color: #444444;
-  color:#DDDDDD;
-  text-align:center;
-  line-height: 150px;
-}
-
 .footer-image {
   background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("/images/team.png");
   background-size: cover;
@@ -84,8 +89,28 @@ p.resource {
 }
 
 #team-text {
-  font-weight: lighter;
+  display: inline-block;
   color: #fff;
   font-size: 3em;
+  font-weight: 200;
   margin-top: 140px;
+}
+
+.bottom{
+  width:100%;
+  height:50px;
+  background-color: #444444;
+  color:#DDDDDD;
+  text-align:center;
+  line-height: 50px;
+}
+
+.cover-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border: 0 !important;
+  z-index: 4000;
 }

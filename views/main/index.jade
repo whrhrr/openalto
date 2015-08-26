@@ -9,26 +9,15 @@ block top-navbar
     img#logo-image(src="/images/logo.png")
     h2#title IETF
     div.subtitle-wrap
-      span November 1 - 6
+      span November 1 - 6 <br/> Yokohama
     div.subtitle-wrap
-      span Yokohama
-    div.subtitle-wrap
-      span#subtitle Join ALTO Team Now
-  div#top-navbar.topping
-    div.col-xs-3
-      a.nav-header(href="#" onclick="$('#section-1').animatescroll();") Interop
-    div.col-xs-3
-      a.nav-header(href="#" onclick="$('#section-2').animatescroll();") Open Service
-    div.col-xs-3
-      a.nav-header(href="#" onclick="$('#section-3').animatescroll();") Resources
-    div.col-xs-3
-      a.nav-header(href="#" onclick="$('#section-4').animatescroll();") About
+      h3#subnote Join ALTO Team Now
 
 block content
   div
-    include sections/interop
     include sections/openservices
     include sections/resources
+    include sections/blog
     include sections/about
   p#back-top
     span

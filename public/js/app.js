@@ -24,5 +24,12 @@ $(document).ready(function () {
     var $collapse = $this.closest('.collapse-group').find('.collapse');
     $collapse.collapse('toggle');
   });
+
+  $('.service-block').hover(function(e) {
+    $(this).find('.service-cover').slideToggle();
+  }, function(e) {
+    $(this).find('.service-cover').slideToggle();
+  });
+
 });
 

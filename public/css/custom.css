@@ -4,7 +4,7 @@
     Author     : RAM
 */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-font-smoothing: antialiased;}
 body, html { font-size: 15px; padding: 0; margin: 0;}
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after { content: " "; display: table; }
@@ -58,15 +58,6 @@ a:hover {
         font-size: 75%;
     }
 }
-[id^="section-"]{margin-top:-20px;padding:25px;padding-top:5px;}
-[id^="section-"] h2{font-family: 'Lato', Calibri, Arial, sans-serif;font-weight:500;color:#666666; margin:20;}
-[id^="section-"] h3{font-family: 'Lato', Calibri, Arial, sans-serif;font-weight:400;color:#666666;margin:10;}
-[id^="section-"] h4{font-family: 'Lato', Calibri, Arial, sans-serif;font-weight:380;color:#666666;margin:10;}
-[id^="section-"] .content-wrapper{color:#666666;font-size:20px;font-weight:100}
-[id^="section-"] .content-wrapper>pre{font-size:14px;display:inline-block}
-[id^="section-"] .content-wrapper a{border-bottom: 1px dotted white;font-weight: 100;font-size:16px;}
-[id^="section-"] .content-wrapper p{color:#666666;border-bottom: 1px dotted white;font-weight: 100;font-size:16px;line-height:1.0;}
-[id^="section-"] .content-wrapper li{color:#666666;border-bottom: 1px dotted white;font-weight: 110;font-size:16px;line-height:1.0;list-style:square}
 .btn{padding:10px;border:3px solid #fff;background-color:transparent;color:#fff;font-weight:700;text-transform:uppercase;display:inline-block}
 .btn:hover{border-style:dashed;cursor:pointer}
 .btn:active,.demo-btn:active{border-style:dotted}
@@ -83,11 +74,6 @@ a:hover {
 .w60{width:60%}
 .w70{width:70%}
 .ptr{cursor:pointer}
-
-.topping {
-    height: 120px;
-    padding-top: 50px;
-}
 
 /*
 Back to top button
