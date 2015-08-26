@@ -3,27 +3,16 @@
   top: 0px;
   width: 100%;
   height: 80px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 99;
 }
 
-.nav-item {
-  position: relative;
-}
-
 .nav-item a {
-  text-align: center;
   display: inline-block;
-  color: #FFF;
   font-size: 22px;
   padding: 0px;
   margin: 28px 50px 28px 50px;
-}
-
-.nav-item:after {
-  display: inline-block;
-  content: '';
-  width: 100%;
+  color: #FFF;
 }
 
 .nav-logo {
