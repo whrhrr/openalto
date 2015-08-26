@@ -9,16 +9,15 @@
 
 .nav-item {
   position: relative;
-  margin-top: 28px;
-  text-align: justify;
 }
 
 .nav-item a {
   text-align: center;
   display: inline-block;
   color: #FFF;
-  width: 25%;
   font-size: 22px;
+  padding: 0px;
+  margin: 28px 50px 28px 50px;
 }
 
 .nav-item:after {
