@@ -13,9 +13,7 @@
 
 .nav-item a {
   display: inline-block;
-  font-size: 18px;
   padding: 0px;
-  margin-top: 28px;
   text-align: center;
   width: 25%;
   color: #FFF;
@@ -29,14 +27,12 @@
 }
 
 .nav-logo {
-  margin-top: 8px;
   text-align: left;
 }
 
 #logo-image {
   padding-left: 5px;
   width: auto;
-  height: 70px;
 }
 
 #image-header {
