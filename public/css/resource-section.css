@@ -1,0 +1,29 @@
+#section-3 {
+  background-color: #EEE;
+}
+
+#resource-content {
+  margin-top: 50px;
+  padding: 0px;
+  overflow: auto;
+}
+
+.resource-item {
+  text-align: center;
+}
+
+.resource-icon {
+  display: block;
+  width: auto;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.resource-links {
+  font-size: 1em;
+  padding: 0px;
+}
+
+.resource-links a {
+
+}

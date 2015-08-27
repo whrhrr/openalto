@@ -1,0 +1,22 @@
+#section-1 {
+  background-image: url("/images/intro_background.jpg");
+  background-size: contain;
+  overflow: auto;
+}
+
+#intro {
+  margin-top: 80px;
+  overflow: auto;
+}
+
+#intro-image {
+  width: 100%;
+  height: 100%;
+}
+
+#intro-text {
+  display: block;
+  margin-top: 50px;
+  text-align: left;
+  font-size: 1.5em;
+}
