@@ -2,8 +2,10 @@ div#section-2
   div.section-title-wrap
     h2.section-title ONLINE TEST
     h2.section-subtitle Test your ALTO sever automatically
-  div.col-md-11.content-wrapper
-    h4 Paste the IRD url of your ALTO server here:
-    form#interop-form(action='/test', method='post')
-      input#url-area(type="text", name="ird-url")
+  div.content-wrapper
+    div#interop-form
+      input#url-area(type="text", name="ird-url", placeHolder="Paste IRD url of your ALTO server here")
       input#url-submit(type="submit", value="Test")
+      div#ajax-waiter
+        img(src="/images/ajax_loader.gif")
+  div#log-wrapper

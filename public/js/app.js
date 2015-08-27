@@ -31,5 +31,22 @@ $(document).ready(function () {
     $(this).find('.service-cover').slideToggle();
   });
 
+  $('#url-submit').click(function(e) {
+    $('#log-wrapper').empty()
+    $('#log-wrapper').hide()
+    $('#ajax-waiter').show()
+    $('#url-submit').attr('disabled', 'disabled');
+    $.ajax({
+      url: "/test",
+      method: "POST",
+      data: {"url": $('#url-area').val()}
+    }).done(function(data, status) {
+      var pre = $('<pre />').addClass('log-text').html(data);
+      $('#log-wrapper').append(pre)
+      $('#ajax-waiter').hide()
+      $('#log-wrapper').show()
+      $('#url-submit').removeAttr('disabled');
+    });
+  });
 });
 

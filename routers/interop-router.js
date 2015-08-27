@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var index = require('../lib/data/index.js')
+var index = require('../lib/data/interop-index.js')
 
 router.use(function(req, res, next) {
   console.log('%s %s %s', req.method, req.url, req.path);
@@ -14,7 +14,9 @@ router.get('/', function(req, res, next){
 });
 
 router.post('/test', function(req, res, next){
-  res.send("Congratulations! All tests are passed");
+  index.get_test_data(req, res, function(stdout) {
+    res.send(stdout);
+  });
 });
 
 module.exports = router
