@@ -13,8 +13,4 @@ evh.register('openalto.org', appMain);
 var appInterop = require('./servers/interop-server')
 evh.register('interop.openalto.org', appInterop);
 
-//blog.openalto.org
-var appBlog = require('./servers/blog-server')
-evh.register('blog.openalto.org', appBlog);
-
 module.exports = app;

@@ -10,9 +10,18 @@
   height: 400px;
 }
 
-.blog-text {
+.blog-title {
+  text-decoration: none;
+  color: #26170f;
   font-weight: bold;
   font-family: "Impact";
+  margin: 0px;
+}
+
+.blog-text {
+  display: block;
+  color: #000;
+  font-size: 1em;
 }
 
 #blog-1 {
@@ -37,7 +46,48 @@
   position: absolute;
   top: 62%;
   left: 49%;
-  font-family: "Impact";
-  font-weight: bold;
   color: #26170f;
+}
+
+#blog-4 a {
+  font-weight: bold;
+  font-family: "Impact";
+  text-decoration: none;
+  color: #000;
+}
+
+@media all and (max-width: 2000px) {
+  .blog-title {font-size: 2em}
+  .blog-text {width: 60%}
+  #blog-4 a {font-size: 3em}
+}
+
+@media all and (max-width: 1200px) {
+  .blog-title {font-size: 1.5em}
+  .blog-text {width: 45%}
+  #blog-4 a {font-size: 2.5em}
+}
+
+@media all and (max-width: 1000px) {
+  .blog-title {font-size: 1.5em}
+  #blog-4 a {font-size: 2.2em}
+}
+
+@media all and (max-width: 800px) {
+  .blog-title {font-size: 1.5em}
+  #blog-3 .blog-text {width: 30%}
+  #blog-4 a {font-size: 2.5em}
+}
+
+@media all and (max-width: 600px) {
+  .blog-title {font-size: 1.2em}
+  .blog-text {font-size: 0.8em}
+  #blog-1 .blog-text {width: 40%}
+  #blog-2 .blog-text {width: 50%}
+  #blog-4 a {font-size: 2em}
+}
+
+@media all and (max-width: 500px) {
+  .blog-title {font-size: 1em}
+  #blog-4 a {font-size: 1.4em}
 }

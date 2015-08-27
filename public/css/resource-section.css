@@ -3,7 +3,6 @@
 }
 
 #resource-content {
-  margin-top: 80px;
   padding: 0px;
   overflow: auto;
 }
@@ -19,13 +18,29 @@
   margin-bottom: 15px;
 }
 
+.resource-header {
+  font-size: 1.2em;
+  margin-top: 25px;
+  height: 30px;
+}
+
 .resource-links {
   text-align: center;
   font-size: 1em;
   margin-top: 10px;
 }
 
-.resource-header {
-  font-size: 1.2em;
-  margin-top: 25px;
+@media all and (max-width: 800px) {
+  .resource-header {font-size: 1em}
+  .resource-links {font-size: 0.8em}
+}
+
+@media all and (max-width: 600px) {
+  .resource-header {font-size: 1em}
+  .resource-links {font-size: 0.8em}
+}
+
+@media all and (max-width: 500px) {
+  .resource-header {font-size: 0.7em}
+  .resource-links {font-size: 0.7em}
 }

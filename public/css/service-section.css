@@ -2,7 +2,8 @@
   background-color: #DDD;
 }
 
-.alto-service {
+.odl-alto-service {
+  display: block;
   background-image: url("/images/odl_logo_full.jpg");
   background-size: cover;
   width: 100%;
@@ -10,13 +11,15 @@
 }
 
 .interop-service {
+  display: block;
   background-image: url("/images/interop_logo.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 
-.other-service {
+.onos-alto-service {
+  display: block;
   background-image: url("/images/onos_logo.jpg");
   background-size: cover;
   width: 100%;
@@ -44,9 +47,53 @@
 }
 
 .service-title {
-  margin-top: 120px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 80px;
   font-family: "Verdana";
   font-weight: 600;
   color: #FFF;
+  height: 60px;
 }
 
+.service-text {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Verdana";
+  color: #FFF;
+}
+
+@media all and (max-width: 2000px) {
+  .service-title {font-size: 28px}
+  .service-text {font-size: 15px}
+  h2.section-title {font-size: 3.0em;}
+}
+
+@media all and (max-width: 1200px) {
+  .service-title {font-size: 25px}
+  .service-text {font-size: 15px}
+  h2.section-title {font-size: 3.0em;}
+}
+
+@media all and (max-width: 1000px) {
+  .service-title {font-size: 25px}
+  .service-text {font-size: 15px}
+  h2.section-title {font-size: 2.5em;}
+}
+
+@media all and (max-width: 800px) {
+  .service-title {font-size: 18px}
+  .service-text {font-size: 12px}
+  h2.section-title {font-size: 2.5em;}
+}
+
+@media all and (max-width: 600px) {
+  .service-title {font-size: 12px}
+  .service-text {font-size: 8px}
+  h2.section-title {font-size: 2em;}
+}
+
+@media all and (max-width: 500px) {
+  .service-title {font-size: 12px}
+  h2.section-title {font-size: 2em;}
+}
