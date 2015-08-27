@@ -1,5 +1,5 @@
-#section-3 {
-  background-color: #EEE;
+#section-4 {
+  background-color: #DDD;
 }
 
 #resource-content {
@@ -10,6 +10,7 @@
 
 .resource-item {
   text-align: center;
+  margin-top: 50px;
 }
 
 .resource-icon {

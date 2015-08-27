@@ -1,0 +1,45 @@
+#section-3 {
+  background-color: #EEE;
+}
+
+#blog-container {
+  position: relative;
+  margin-top: 50px;
+  background-image: url("/images/blog_container.png");
+  background-size: 100% 100%;
+  height: 400px;
+}
+
+.blog-text {
+  font-weight: bold;
+  font-family: "Impact";
+}
+
+#blog-1 {
+  position: absolute;
+  top: 12%;
+  left: 1.5%;
+  font-size: 1.2em;
+}
+
+#blog-2 {
+  position: absolute;
+  top: 3%;
+  left: 51%;
+  font-size: 1.2em;
+}
+
+#blog-3 {
+  position: absolute;
+  top: 53%;
+  left: 13%;
+  font-size: 1.2em;
+}
+
+#blog-4 {
+  position: absolute;
+  top: 62%;
+  left: 49%;
+  font-size: 2.5em;
+  color: #26170f;
+}
