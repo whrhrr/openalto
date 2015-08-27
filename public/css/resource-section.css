@@ -3,7 +3,7 @@
 }
 
 #resource-content {
-  margin-top: 50px;
+  margin-top: 80px;
   padding: 0px;
   overflow: auto;
 }
@@ -13,17 +13,18 @@
 }
 
 .resource-icon {
-  display: block;
   width: auto;
   height: 60px;
   margin-bottom: 15px;
 }
 
 .resource-links {
+  text-align: center;
   font-size: 1em;
-  padding: 0px;
+  margin-top: 10px;
 }
 
-.resource-links a {
-
+.resource-header {
+  font-size: 1.2em;
+  margin-top: 25px;
 }
