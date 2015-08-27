@@ -1,26 +1,23 @@
 extend ../layout
 
 block custom-assets
+  include assets.jade
 
 block top-navbar
-  div#top-navbar.topping
-    div.col-md-1
-    div.col-md-1.nav-header-icon
-      img(src="images/ALTOlogo.1.png", alt="ALTOlogo", width="200", height="100")
-    div.col-md-1
-    div.col-md-2(style="text-align:center;")
-      a.nav-header(href="#" onclick="$('#section-1').animatescroll();").
-        Steps
-    div.col-md-2(style="text-align:center;")
-      a.nav-header(href="#" onclick="$('#section-2').animatescroll();").
-        Online Test
+  div#top-nav-bar
+    div.nav-logo.col-xs-2
+      img#logo-image(src="/images/alto_logo.png")
+    div.nav-item.col-xs-8
+      a(href="#", onclick="$('#section-1').animatescroll({padding:80});") Steps
+      a(href="#", onclick="$('#section-2').animatescroll({padding:80});") Online Test
+    div.nav-logo.col-xs-2
+
+block header
 
 block content
-  div#hello(style="width:100%;")
-      div
-        div.main.clearfix
-          include sections/steps
-          include sections/online-test
-      p#back-top
-        span
-          a(href="#top", onclick="$('body').animatescroll()")
+  div#hello
+    include sections/steps
+    include sections/online-test
+  p#back-top
+    span
+      a(href="#top", onclick="$('body').animatescroll()")

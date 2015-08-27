@@ -10,11 +10,11 @@
   height: 400px;
 }
 
-.blog-title {
-  text-decoration: none;
-  color: #26170f;
-  font-weight: bold;
+a.blog-title {
   font-family: "Impact";
+  text-decoration: none;
+  font-weight: bold;
+  color: #26170f;
   margin: 0px;
 }
 
@@ -50,22 +50,21 @@
 }
 
 #blog-4 a {
-  font-weight: bold;
   font-family: "Impact";
   text-decoration: none;
-  color: #000;
+  font-weight: bold;
+  color: #26170f;
 }
 
 @media all and (max-width: 2000px) {
   .blog-title {font-size: 2em}
   .blog-text {width: 60%}
-  #blog-4 a {font-size: 3em}
+  #blog-4 a {font-size: 2.5em}
 }
 
 @media all and (max-width: 1200px) {
   .blog-title {font-size: 1.5em}
   .blog-text {width: 45%}
-  #blog-4 a {font-size: 2.5em}
 }
 
 @media all and (max-width: 1000px) {

@@ -1,12 +1,9 @@
 div#section-2
-    div.col-md-12.content-wrapper(style="margin-top:40px;")
-      div(style="margin-bottom:30px;")
-        h2.pheader.
-          Online Test
-      div.col-md-1.content-wrapper(style="margin-top:20px;")
-      div.col-md-11.content-wrapper
-        form#interop-form(action='/test', method='post')
-          &nbsp;&nbsp;&nbsp;&nbsp; IRD URL:
-          input#ird-url(type="text", name="ird-input")
-          input(type="submit", value="Run")
-div.main.clearfix
+  div.section-title-wrap
+    h2.section-title ONLINE TEST
+    h2.section-subtitle Test your ALTO sever automatically
+  div.col-md-11.content-wrapper
+    h4 Paste the IRD url of your ALTO server here:
+    form#interop-form(action='/test', method='post')
+      input#url-area(type="text", name="ird-url")
+      input#url-submit(type="submit", value="Test")
