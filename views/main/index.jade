@@ -1,24 +1,18 @@
 extend ../layout
 
 block custom-assets
-  link(rel="stylesheet", type="text/css", href="css/header.css")
-  link(rel="stylesheet", type="text/css", href="css/section.css")
-  link(rel="stylesheet", type="text/css", href="css/intro-section.css")
-  link(rel="stylesheet", type="text/css", href="css/service-section.css")
-  link(rel="stylesheet", type="text/css", href="css/resource-section.css")
-  link(rel="stylesheet", type="text/css", href="css/blog-section.css")
-  link(rel="stylesheet", type="text/css", href="css/about-section.css")
+  include assets
 
 block top-navbar
-    div#top-nav-bar
-      div.nav-logo.col-xs-2
-        img#logo-image(src="/images/alto_logo.png")
-      div.nav-item.col-xs-8
-        a(href="#", onclick="$('#section-2').animatescroll({padding:80});") Services
-        a(href="#", onclick="$('#section-3').animatescroll({padding:80});") Blog
-        a(href="#", onclick="$('#section-4').animatescroll({padding:80});") Resources
-        a(href="#", onclick="$('#section-5').animatescroll({padding:80});") About Us
-      div.nav-logo.col-xs-2
+  div#top-nav-bar
+    div.nav-logo.col-xs-2
+      img#logo-image(src="/images/alto_logo.png")
+    div.nav-item.col-xs-8
+      a(href="#", onclick="$('#section-2').animatescroll({padding:80});") Services
+      a(href="#", onclick="$('#section-3').animatescroll({padding:80});") Blog
+      a(href="#", onclick="$('#section-4').animatescroll({padding:80});") Resources
+      a(href="#", onclick="$('#section-5').animatescroll({padding:80});") About Us
+    div.nav-logo.col-xs-2
 
 block header
   div#image-header

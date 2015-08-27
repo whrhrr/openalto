@@ -4,6 +4,7 @@
   padding-top: 0px;
   padding-bottom: 100px;
   overflow: auto;
+    h2.section-title SERVICES
 }
 
 .section-title-wrap {
@@ -15,9 +16,14 @@
   display:inline-block;
 }
 
-h2.section-title {
+.section-title {
   color:#333333;
+}
+
+.section-subtitle {
+  color:#000;
   padding-bottom: 2px;
+  font-weight: 300;
 }
 
 .bottom{
@@ -27,4 +33,21 @@ h2.section-title {
   color:#DDDDDD;
   text-align:center;
   line-height: 50px;
+}
+
+@media all and (max-width: 2000px) {
+  .section-title {font-size: 3.5em;}
+  .section-subtitle {font-size: 1em;}
+}
+
+@media all and (max-width: 1000px) {
+  .section-title {font-size: 2.5em;}
+}
+
+@media all and (max-width: 600px) {
+  .section-title {font-size: 2em;}
+}
+
+@media all and (max-width: 500px) {
+  .section-title {font-size: 2em;}
 }

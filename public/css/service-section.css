@@ -66,34 +66,26 @@
 @media all and (max-width: 2000px) {
   .service-title {font-size: 28px}
   .service-text {font-size: 15px}
-  h2.section-title {font-size: 3.0em;}
 }
 
 @media all and (max-width: 1200px) {
   .service-title {font-size: 25px}
-  .service-text {font-size: 15px}
-  h2.section-title {font-size: 3.0em;}
 }
 
 @media all and (max-width: 1000px) {
   .service-title {font-size: 25px}
-  .service-text {font-size: 15px}
-  h2.section-title {font-size: 2.5em;}
 }
 
 @media all and (max-width: 800px) {
   .service-title {font-size: 18px}
   .service-text {font-size: 12px}
-  h2.section-title {font-size: 2.5em;}
 }
 
 @media all and (max-width: 600px) {
   .service-title {font-size: 12px}
   .service-text {font-size: 8px}
-  h2.section-title {font-size: 2em;}
 }
 
 @media all and (max-width: 500px) {
-  .service-title {font-size: 12px}
   h2.section-title {font-size: 2em;}
 }
