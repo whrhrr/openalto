@@ -16,10 +16,10 @@
   font-size: 18px;
   padding: 0px;
   margin-top: 28px;
-  margin-bottom: 28px;
   text-align: center;
   width: 25%;
   color: #FFF;
+  text-decoration: none;
 }
 
 .nav-item:after {
@@ -83,6 +83,7 @@
   padding-left: 15px;
   padding-right: 15px;
   color: #FFF;
+  text-decoration: none;
 }
 
 div.col-xs-3 {
