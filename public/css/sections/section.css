@@ -31,7 +31,7 @@
 }
 
 @media all and (max-width: 2000px) {
-  .section-title {font-size: 1.5em;}
+  .section-title {font-size: 2em;}
 }
 
 @media all and (max-width: 1200px) {
