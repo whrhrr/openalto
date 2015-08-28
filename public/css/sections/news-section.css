@@ -3,90 +3,68 @@
 }
 
 #blog-container {
-  position: relative;
   margin-top: 50px;
-  background-image: url("/images/blog_container.png");
-  background-size: 100% 100%;
-  height: 400px;
+  overflow: auto;
+}
+
+#news-image {
+  display: block;
+  margin: 0px auto;
+  width: 35%;
+}
+
+#blog-1 {
+  display: inline-block;
+  text-align: right;
+  width: 36%;
+}
+
+#blog-2 {
+  display: inline-block;
+  margin: 0 auto;
+  width: 40%;
+  margin-left: 16%;
+}
+
+#blog-3 {
+  display: inline-block;
+  text-align: right;
+  margin-left: 1%;
+  width: 38%;
+}
+
+#blog-4 {
+  display: inline-block;
+  margin-left: 12%;
+  width: 30%;
+  vertical-align: top;
 }
 
 a.blog-title {
+  font-size: 1.5em;
   font-family: "Impact";
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
   color: #26170f;
-  margin: 0px;
 }
 
 .blog-text {
+  margin: 0px;
   display: block;
   color: #000;
   font-size: 1em;
 }
 
-#blog-1 {
-  position: absolute;
-  top: 11%;
-  left: 1.5%;
-}
-
-#blog-2 {
-  position: absolute;
-  top: 3%;
-  left: 51%;
-}
-
-#blog-3 {
-  position: absolute;
-  top: 53%;
-  left: 13%;
-}
-
-#blog-4 {
-  position: absolute;
-  top: 62%;
-  left: 49%;
-  color: #26170f;
-}
-
-#blog-4 a {
-  font-family: "Impact";
-  text-decoration: none;
-  font-weight: bold;
-  color: #26170f;
-}
-
 @media all and (max-width: 2000px) {
-  .blog-title {font-size: 2em}
-  .blog-text {width: 60%}
-  #blog-4 a {font-size: 2.5em}
 }
 
 @media all and (max-width: 1200px) {
-  .blog-title {font-size: 1.5em}
-  .blog-text {width: 45%}
 }
 
 @media all and (max-width: 1000px) {
-  .blog-title {font-size: 1.5em}
-  #blog-4 a {font-size: 2.2em}
 }
 
-@media all and (max-width: 800px) {
-  .blog-title {font-size: 1.5em}
-  #blog-3 .blog-text {width: 30%}
-  #blog-4 a {font-size: 2.5em}
-}
-
-@media all and (max-width: 600px) {
-  .blog-title {font-size: 1.2em}
-  .blog-text {font-size: 0.8em}
-  #blog-1 .blog-text {width: 40%}
-  #blog-2 .blog-text {width: 50%}
-  #blog-4 a {font-size: 2em}
-}
-
-@media all and (max-width: 500px) {
-  .blog-title {font-size: 1em}
-  #blog-4 a {font-size: 1.4em}
+@media all and (max-width: 768px) {
+  a.blog-title {font-size: 1em;}
+  .blog-text {font-size: 0.8em;}
 }

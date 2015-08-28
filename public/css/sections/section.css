@@ -12,17 +12,9 @@
 }
 
 .section-title {
-  display:inline-block;
-}
-
-.section-title {
-  color:#333333;
-}
-
-.section-subtitle {
-  color:#000;
   padding-bottom: 2px;
   font-weight: 300;
+  color:#333333;
 }
 
 .bottom{
@@ -36,14 +28,13 @@
 }
 
 @media all and (max-width: 2000px) {
-  .section-title {font-size: 3.5em;}
-  .section-subtitle {font-size: 1em;}
+  .section-title {font-size: 2em;}
 }
 
-@media all and (max-width: 1000px) {
-  .section-title {font-size: 2.5em;}
+@media all and (max-width: 1200px) {
+  .section-title {font-size: 1.6em;}
 }
 
 @media all and (max-width: 768px) {
-  .section-title {font-size: 2em;}
+  .section-title {font-size: 1.3em;}
 }
