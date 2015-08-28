@@ -7,15 +7,19 @@
 }
 
 .section-title-wrap {
-  padding-top: 50px;
+  margin-top: 30px;
   text-align:center;
 }
 
 .section-title {
   font-family: "Verdana";
-  padding-bottom: 2px;
   font-weight: 300;
+  font-size: 1.7em;
   color:#333333;
+}
+
+.section-content {
+  margin-top: 50px;
 }
 
 .bottom{
@@ -28,14 +32,4 @@
   font-family: "Verdana";
   font-weight: 400;
   margin-bottom: 0px;
-}
-
-@media all and (max-width: 2000px) {
-  .section-title {font-size: 2em;}
-}
-
-@media all and (max-width: 1200px) {
-}
-
-@media all and (max-width: 768px) {
 }

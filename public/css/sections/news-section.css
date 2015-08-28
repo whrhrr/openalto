@@ -1,9 +1,9 @@
 #section-3 {
-  background-color: #EEE;
+  background-image: url("/images/intro_background.jpg");
+  background-size: contain;
 }
 
-#blog-container {
-  margin-top: 50px;
+#news-container {
   overflow: auto;
 }
 
