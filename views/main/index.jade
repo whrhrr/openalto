@@ -5,14 +5,14 @@ block custom-assets
 
 block top-navbar
   div#top-nav-bar
-    div.nav-logo.col-xs-2
+    div.nav-logo.col-md-2.col-xs-3
       img#logo-image(src="/images/alto_logo.png")
-    div.nav-item.col-xs-8
-      a(href="#", onclick="$('#section-2').animatescroll({padding:80});") Services
-      a(href="#", onclick="$('#section-3').animatescroll({padding:80});") Blog
-      a(href="#", onclick="$('#section-4').animatescroll({padding:80});") Resources
-      a(href="#", onclick="$('#section-5').animatescroll({padding:80});") About Us
-    div.nav-logo.col-xs-2
+    div.nav-item.col-md-8.col-xs-9
+      a.col-xs-3.col-sm-3.col-md-3(href="#", onclick="$('#section-2').animatescroll({padding:80});") Services
+      a.col-xs-3.col-sm-3.col-md-3(href="#", onclick="$('#section-3').animatescroll({padding:80});") News
+      a.col-xs-3.col-sm-3.col-md-3(href="#", onclick="$('#section-4').animatescroll({padding:80});") Resources
+      a.col-xs-3.col-sm-3.col-md-3(href="#", onclick="$('#section-5').animatescroll({padding:80});") About Us
+    div.nav-logo.col-md-2.col-xs-0
 
 block header
   div#image-header
@@ -26,7 +26,7 @@ block content
   div
     include sections/introduction
     include sections/services
-    include sections/blog
+    include sections/news
     include sections/resources
     include sections/about
   p#back-top

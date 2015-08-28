@@ -32,8 +32,8 @@ $(document).ready(function () {
   });
 
   $('#url-submit').click(function(e) {
-    $('#log-wrapper').empty()
-    $('#log-wrapper').hide()
+    $('#log-text').empty()
+    $('#log-text').hide()
     $('#ajax-waiter').show()
     $('#url-submit').attr('disabled', 'disabled');
     $.ajax({
@@ -41,10 +41,9 @@ $(document).ready(function () {
       method: "POST",
       data: {"url": $('#url-area').val()}
     }).done(function(data, status) {
-      var pre = $('<pre />').addClass('log-text').html(data);
-      $('#log-wrapper').append(pre)
+      $('#log-text').addClass('log-text').html(data);
+      $('#log-text').show()
       $('#ajax-waiter').hide()
-      $('#log-wrapper').show()
       $('#url-submit').removeAttr('disabled');
     });
   });

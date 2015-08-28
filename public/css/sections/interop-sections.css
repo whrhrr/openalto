@@ -55,17 +55,6 @@
   font-size: 1em;
 }
 
-#log-wrapper {
-  width: 50%;
-  max-height: 400px;
-  background-color: #EEE;
-  overflow: scroll;
-  margin: 0 auto;
-  margin-bottom: 80px;
-  padding: 8px;
-  display: none;
-}
-
 #ajax-waiter {
   text-align: center;
   width: 100%;
@@ -73,7 +62,14 @@
   display: none;
 }
 
-.log-text {
+#log-text {
+  width: 50%;
+  max-height: 400px;
+  background-color: #EEE;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 8px;
   padding: 10px;
   color: #000;
+  display: none;
 }

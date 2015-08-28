@@ -23,14 +23,11 @@
 }
 
 .alto-intro {
-  display: inline-block;
-  text-align: center;
+  text-align: left;
   color: #000;
 }
 
 .alto-intro-text {
-  padding-left: 20%;
-  padding-right: 15%;
   text-align: left;
 }
 
@@ -44,12 +41,7 @@
   .alto-intro-text span {font-size: 1em;}
 }
 
-@media all and (max-width: 1200px) {
-  .alto-intro h3 {font-size: 1.3em}
-  .alto-intro-text span {font-size: 0.8em;}
-}
-
-@media all and (max-width: 600px) {
-  .alto-intro h3 {font-size: 1em}
-  .alto-intro-text span {font-size: 0.6em;}
+@media all and (max-width: 768px) {
+  .alto-intro h3 {font-size: 1.5em}
+  .alto-intro-text span {font-size: 1em;}
 }

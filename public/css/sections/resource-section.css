@@ -30,17 +30,7 @@
   margin-top: 10px;
 }
 
-@media all and (max-width: 800px) {
-  .resource-header {font-size: 1em}
-  .resource-links {font-size: 0.8em}
-}
-
-@media all and (max-width: 600px) {
-  .resource-header {font-size: 1em}
-  .resource-links {font-size: 0.8em}
-}
-
-@media all and (max-width: 500px) {
-  .resource-header {font-size: 0.7em}
-  .resource-links {font-size: 0.7em}
+@media all and (max-width: 768px) {
+  .resource-header {font-size: 1.2em}
+  .resource-links {font-size: 1em}
 }
