@@ -10,11 +10,13 @@
   display: inline-block;
   color: #fff;
   font-size: 3em;
-  font-weight: 200;
+  font-family: "Verdana";
+  font-weight: 400;
   margin-top: 100px;
 }
 
 #contactor-text {
   color: #FFF;
-  font-weight: 200;
+  font-family: "Verdana";
+  font-weight: 400;
 }

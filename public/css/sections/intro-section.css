@@ -31,6 +31,12 @@
 
 .alto-intro-text {
   text-align: left;
+  font-family: "Verdana";
+}
+
+.alto-intro h3 {
+  font-family: "Verdana";
+  font-weight: 600;
 }
 
 @media all and (max-width: 2000px) {

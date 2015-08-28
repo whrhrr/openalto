@@ -19,12 +19,14 @@
 }
 
 .resource-header {
+  font-family: "Verdana";
   font-size: 1.2em;
   margin-top: 25px;
   height: 30px;
 }
 
 .resource-links {
+  font-family: "Verdana";
   text-align: center;
   font-size: 1em;
   margin-top: 10px;

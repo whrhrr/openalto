@@ -12,6 +12,7 @@
 }
 
 .section-title {
+  font-family: "Verdana";
   padding-bottom: 2px;
   font-weight: 300;
   color:#333333;
@@ -24,6 +25,8 @@
   background-color: #444444;
   color:#DDDDDD;
   text-align:center;
+  font-family: "Verdana";
+  font-weight: 400;
   margin-bottom: 0px;
 }
 

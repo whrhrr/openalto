@@ -9,7 +9,7 @@
 
 #news-image {
   display: block;
-  margin: 0px auto;
+  margin-left: 35%;
   width: 35%;
 }
 
@@ -23,27 +23,27 @@
   display: inline-block;
   margin: 0 auto;
   width: 40%;
-  margin-left: 16%;
+  margin-left: 20%;
 }
 
 #blog-3 {
   display: inline-block;
   text-align: right;
-  margin-left: 1%;
+  margin-left: 5%;
   width: 38%;
 }
 
 #blog-4 {
   display: inline-block;
-  margin-left: 12%;
+  margin-left: 16%;
   width: 30%;
   vertical-align: top;
 }
 
 a.blog-title {
-  font-size: 1.5em;
-  font-family: "Impact";
-  font-weight: bold;
+  font-size: 1.3em;
+  font-family: "Verdana";
+  font-weight: 600;
   text-decoration: none;
   color: #26170f;
 }
@@ -53,6 +53,7 @@ a.blog-title {
   display: block;
   color: #000;
   font-size: 1em;
+  font-family: "Verdana";
 }
 
 @media all and (max-width: 2000px) {

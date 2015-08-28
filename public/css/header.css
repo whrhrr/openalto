@@ -19,6 +19,8 @@
   text-decoration: none;
   text-align: center;
   color: #000;
+  font-family: "Verdana";
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -87,8 +89,6 @@ div.col-xs-3 {
 }
 
 @media all and (max-width: 768px) {
-  .nav-item a {
-      text-align: right;
-  }
+  .nav-item a {text-align: right;}
   .nav-item {margin-top: 15px;}
 }
