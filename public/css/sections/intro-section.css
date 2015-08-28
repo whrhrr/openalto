@@ -12,10 +12,12 @@
 #intro-image {
   width: 100%;
   height: 100%;
+  padding: 10px;
 }
 
 #intro-text {
   margin-top: 50px;
+  padding: 0 5%;
 }
 
 #rfc-link {
