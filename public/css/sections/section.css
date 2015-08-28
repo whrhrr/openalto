@@ -28,13 +28,11 @@
 }
 
 @media all and (max-width: 2000px) {
-  .section-title {font-size: 2em;}
+  .section-title {font-size: 1.5em;}
 }
 
 @media all and (max-width: 1200px) {
-  .section-title {font-size: 1.6em;}
 }
 
 @media all and (max-width: 768px) {
-  .section-title {font-size: 1.3em;}
 }
