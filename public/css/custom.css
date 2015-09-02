@@ -137,3 +137,9 @@ Back to top button
     .fr{float:none}
     .w30,.w60,.w70{width:100%}
 }
+
+@media all and (max-width: 768px) {
+    #back-top {
+        right: 30px;
+    }
+}

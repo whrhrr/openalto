@@ -88,6 +88,29 @@ div.col-xs-3 {
 }
 
 @media all and (max-width: 768px) {
-  .nav-item a {text-align: right;}
-  .nav-item {margin-top: 15px;}
+  #top-nav-bar {
+    position: absolute;
+    height: auto;
+  }
+
+  .nav-item a {
+    text-align: right;
+  }
+
+  .nav-item {
+    margin-top: 15px;
+  }
+
+  #image-header {
+    background-image: url("/images/header_mobile.jpg");
+    height: 360px;
+  }
+
+  #title {
+    margin-top: 150px;
+  }
+
+  #subnote {
+    margin-top: 50px;
+  }
 }

@@ -1,0 +1,24 @@
+#section-6 {
+  background-color: #444;
+  padding-bottom: 0;
+}
+
+.section-logo-title {
+  font-size: 2.5em;
+  color: #DDD;
+  margin-bottom: 1.0em;
+}
+
+.logo-block {
+}
+
+.logo-block img {
+  width: 90%;
+  height: auto;
+}
+
+@media all and (max-width: 768px) {
+  .logo-block {
+    padding: 0 2px;
+  }
+}
