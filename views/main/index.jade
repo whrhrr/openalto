@@ -8,10 +8,10 @@ block top-navbar
     div.nav-logo.col-md-2.col-sm-2.col-xs-3
       img#logo-image(src="/images/alto_logo.png")
     div.nav-item.col-md-8.col-sm-8.col-xs-9
+      a.col-xs-12.col-sm-3.col-md-3(href="#", onclick="$('#section-1').animatescroll({padding:80});") NEWS
       a.col-xs-12.col-sm-3.col-md-3(href="#", onclick="$('#section-2').animatescroll({padding:80});") SERVICES
-      a.col-xs-12.col-sm-3.col-md-3(href="#", onclick="$('#section-3').animatescroll({padding:80});") NEWS
-      a.col-xs-12.col-sm-3.col-md-3(href="#", onclick="$('#section-4').animatescroll({padding:80});") RESOURCES
-      a.col-xs-12.col-sm-3.col-md-3(href="#", onclick="$('#section-5').animatescroll({padding:80});") ABOUT US
+      a.col-xs-12.col-sm-3.col-md-3(href="#", onclick="$('#section-3').animatescroll({padding:80});") RESOURCES
+      a.col-xs-12.col-sm-3.col-md-3(href="#", onclick="$('#section-4').animatescroll({padding:80});") ABOUT US
 
 block header
   div#image-header
@@ -23,12 +23,11 @@ block header
 
 block content
   div
-    include sections/introduction
-    include sections/services
     include sections/news
+    include sections/services
+    include sections/introduction
     include sections/resources
     include sections/about
-    include sections/friends
   p#back-top
     span
       a(href="#top", onclick="$('body').animatescroll()")

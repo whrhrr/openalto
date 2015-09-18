@@ -32,7 +32,7 @@
 #logo-image {
   padding-left: 5px;
   width: auto;
-  height: 60px;
+  height: 50px;
 }
 
 #image-header {
@@ -84,7 +84,7 @@
 
 div.col-xs-3 {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 @media all and (max-width: 768px) {

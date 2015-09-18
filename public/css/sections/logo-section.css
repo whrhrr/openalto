@@ -17,6 +17,11 @@
   height: auto;
 }
 
+.logo-huawei-block img {
+  width: 100%;
+  height: auto;
+}
+
 @media all and (max-width: 768px) {
   .logo-block {
     padding: 0 2px;
