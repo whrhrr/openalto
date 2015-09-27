@@ -13,19 +13,47 @@
 }
 
 #section-1 .section-content {
-  height: 200px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+#section-1 .server-name {
+  color: rgb(0,162,154)
+}
+
+#section-1 .client-name {
+  color: rgb(0,162,154)
+}
+
+#section-1 .name-owner {
+  font-size:1.2em
+}
+
+#section-1 .contact {
+  font-size:1.0em
 }
 
 #section-2 {
   background-color: #DDD;
   overflow: auto;
+  height: auto;
 }
 
 .content-wrapper {
   margin-top: 100px;
   width: 100%;
   text-align: center;
-  height: 150px;
+  height: auto;
+}
+
+#section-2 .steps {
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+#section-2 .server-uri {
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 .content-wrapper h4 {

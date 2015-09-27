@@ -1,10 +1,13 @@
 div#section-2
-  div.section-title-wrap
-    h2.section-title Test your ALTO sever automatically
-  div.content-wrapper
-    div#interop-form
+    div#interop-form.col-md-offset-4.server-uri
       input#url-area(type="text", name="ird-url", placeHolder="Paste IRD url of your ALTO server here")
-      input#url-submit(type="submit", value="Test")
+      input#url-submit(type="submit", value="Test").btn-danger
       div#ajax-waiter
         img(src="/images/ajax_loader.gif")
+    div.steps.col-md-offset-4
+      h2.section-title Steps
+      p 1. Put related network maps and cost maps in your ALTO server
+      p 2. Paste IRD of your ALTO Server in the box below
+      p 3. Click the text button
+      p 4. Wait some time for your test result appearance
   pre#log-text
