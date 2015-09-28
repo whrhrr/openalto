@@ -1,9 +1,10 @@
 div#section-2
     div#interop-form.col-md-offset-4.server-uri
       input#url-area(type="text", name="ird-url", placeHolder="Paste IRD url of your ALTO server here")
-      input#url-submit(type="submit", value="Test").btn-danger
+      input#url-submit(type="submit", value="Test").btn-danger.test-btn
       div#ajax-waiter
         img(src="/images/ajax_loader.gif")
+    pre#log-text
     div.steps.col-md-offset-4
       h2.section-title Steps
       p 1. Put related network maps and cost maps in your ALTO server

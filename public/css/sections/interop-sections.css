@@ -101,3 +101,15 @@
   color: #000;
   display: none;
 }
+
+#section-1 .server-company-name-padding {
+  padding-left:30px;
+}
+
+#section-1 .client-company-name-padding {
+  padding-left:20px;
+}
+
+.test-btn {
+  width:80px;
+}
